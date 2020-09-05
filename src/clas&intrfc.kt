@@ -3,12 +3,12 @@ interface First {
     fun one()
 }
 
-interface Seconed  {
+interface Seconed : First {
     fun two()
 }
 
 
-class Clss: First, Seconed{
+class Clss: Seconed{
 
     override fun one() {
         println("Inheritance from the first interface ")
